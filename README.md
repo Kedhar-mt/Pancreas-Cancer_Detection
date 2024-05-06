@@ -1,2 +1,2 @@
-# Pancreas-Cancer_Detection
-Pancreatic cancer detection using ensemble learning
+# Pancreas-Cancer_Detection using Ensemble learning
+
