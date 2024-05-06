@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registration Page</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Satisfy&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Cinzel:wght@400..900&family=Satisfy&display=swap');
+  body {
+    background-image: url("/static/img3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #410057;
+    font-family: "Alegreya", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;/* Ensures that the image covers the whole body *//* Centers the image in the body *//* Full viewport height */
+  }
+  
+  .container {
+    background-color: rgba(255, 255, 255, 0.167); /* Semi-transparent white background */
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 10px 0px rgb(235, 201, 201); /* Soft shadow around the container */
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 400px; 
+    margin-left: 100px; 
+  }
+  
+  h2 {
+    font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+    text-align: center;
+    font-size: 1.9em;
+    color: aliceblue;
+    font-weight: bold;
+    margin-bottom: 20px; /* Added margin to the bottom of the title */
+  }
+  .login-redirect {
+    text-align: center; /* Centers the text */
+    margin-top: 20px; /* Provides space between the button and this text */
+  }
+  
+  /* Style for the login link */
+  .login-redirect a {
+    color: #4c59af;
+    text-decoration: none;
+  }
+  
+  .login-redirect a:hover {
+    text-decoration: underline;
+  }
+
+  /* Style for form inputs and button */
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="tel"], /* Correct input type for mobile numbers */
+  button {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd; /* Soft border for inputs */
+    box-sizing: border-box;
+  }
+  
+  button {
+    background-color: #914caf;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transition for the button hover effect */
+  }
+  
+  button:hover {
+    background-color: #6e268d; /* Different hover color */
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h2>Registration</h2>
+  <form class="registration-form" method="post" action="userreg">
+    <label for="fullname">Full Name:</label>
+    <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+    
+    <label for="mobilenumber">Mobile Number:</label>
+    <input type="tel" id="mobilenumber" name="mobilenumber" placeholder="Enter your Mobile Number" required>
+    
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+    
+    <label for="confirm_password">Confirm Password:</label>
+    <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm your password" required>
+    
+    <button type="submit">Register</button>
+  </form>
+
+    <p class="login-redirect">
+        Already a user? <a href="userlogin">Login</a>
+        </p>
+      </div>
+
+</body>
+</html>

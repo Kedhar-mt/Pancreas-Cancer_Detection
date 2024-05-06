@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Detailed Results Table</title>
+<style>
+  body {
+    background-image: url('/static/img4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  table {
+    width: 100%;
+    margin: 20px 0;
+    border-collapse: collapse;
+  }
+  th, td {
+    text-align: left;
+    padding: 8px;
+    border: 1px solid #ddd;
+  }
+  th {
+    background-color: #914caf;
+    color: white;
+  }
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  tr:nth-child(odd) {
+    background-color: #f2f2f2;
+  }
+  button{
+  display: inline-block;  
+    background-color: #914caf;
+    color: white; 
+    text-align: center; 
+    padding: 15px;
+    border-radius: 15px;
+    font-size: 16px; 
+    border: none; 
+    cursor: pointer; 
+    margin-left:500px;
+    transition: background-color 0.3s ease;
+}
+
+
+button:hover{
+    background-color: #6e268d;
+  }
+
+</style>
+</head>
+<body>
+
+<h2 style="text-align:center;color: #fff;">Patient Diagnosis Details</h2>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Age</th>
+    <th>Gender</th>
+    <th>Date</th>
+    <th>Creatinine</th>
+    <th>LYVE1</th>
+    <th>TFF1</th>
+    <th>REG1B</th>
+    <th>Plasma_CA19_9</th>
+    <th>REG1A</th>
+    <th>RESULT</th>
+    
+  </tr>
+  
+  {% for row in data %}
+            <tr>
+                <td>{{ row[0] }}</td>
+                <td>{{ row[1] }}</td>
+                <td>{{ row[2] }}</td>
+                <td>{{ row[3] }}</td>
+                <td>{{ row[4] }}</td>
+                <td>{{ row[5] }}</td>
+                <td>{{ row[6] }}</td>
+                <td>{{ row[7] }}</td>
+                <td>{{ row[8] }}</td>
+                <td>{{ row[9] }}</td>
+                <td>{{ row[10] }}</td>
+    
+            </tr>
+            {% endfor %}
+  
+</table>
+<form action="/homepage" >
+  <button>Back to homepage</button>
+</form>
+</body>
+</html>

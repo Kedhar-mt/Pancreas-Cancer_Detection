@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home Page</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" >
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Cinzel:wght@400..900&family=Satisfy&display=swap');
+  body {
+    margin: 0px;
+    font-family: "Alegreya", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  .main{
+    background-image: url('/static/img2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 50vw; 
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    position: relative;
+  }
+  .navbar {
+    display: flex;
+    position: fixed;
+    z-index: 10000000;
+    justify-content:space-around;
+    align-items: center;
+    color: rgb(7, 7, 7);
+    padding: 20px 0px;
+    width: 100%;
+    background-color: #fff;
+  }
+  .nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-left: 50px;
+  }
+  .nav-links li {
+    padding: 0 10px;
+  }
+  .navbar a, .footer a {
+    text-decoration: none;
+    color: rgb(19, 19, 19);
+    font-size: large;
+  }
+  .nav-right {
+    display: flex;
+  }
+  .footer { 
+    background-color: #1b0023fa;
+    color: rgb(5, 4, 4);
+    text-align: center;
+    padding: 11px;
+  }
+  .social-icons {
+    list-style: none;
+    padding: 0;
+    color: black;
+    
+  }
+  .social-icons li {
+    display: inline;
+    margin: 0 10px;
+    color: bisque;
+    
+  }
+  h1{
+    font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight:500;
+  font-style: normal;
+    color: #fcf7f7;
+    margin-top: 170px;
+    font-size: 40px;
+    text-align: center;
+  }
+  p{
+    text-align: center;
+    color: #fcf7f7;
+  }
+  .square-button {
+    display: inline-block; 
+    width: 200px; 
+    height: 80px; 
+    background-color: #e57ff5; 
+    color: white; 
+    text-align: center; 
+    line-height: 100px; 
+    font-size: 16px; 
+    border: none; 
+    cursor: pointer; 
+    margin-left:800px;
+  }
+  h4{
+    font-size: xx-large;
+  }
+  .icon{
+    cursor: pointer;
+    padding: 7px;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: background-color 0.3s ease;
+    margin-left: 10px;
+  }
+  .icon:hover{
+    background-color: #270038;
+    color: #fff;
+  }
+  
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <div class="nav-left">
+    <a href="#">Home</a>
+  </div>
+  <div class="nav-right">
+    <ul class="nav-links">
+      <li><a href="test">Take Test</a></li>
+      <li><a href="data">Previous Records</a></li>
+      <li><a href="logout">Logout</a></li>
+    </ul>
+  </div>
+</div>
+<div class="main">
+  <h1><span>EARLY DETECTION OF <br>PANCREATIC CANCER</span></h1>
+  <p>Early Detection is our priority in the fight against pancreatic cancer </p>
+</div>
+
+<footer class="footer">
+  
+  <h2 style="color: #fff;">Contact Us</h2>
+  <ul class="social-icons">
+    <i class="fa-brands fa-whatsapp icon"></i>
+    <i class="fa-brands fa-facebook icon"></i>
+    <i class="fa-brands fa-instagram icon"></i>
+    <i class="fa-solid fa-square-envelope icon"></i>
+  </ul>
+</footer>
+
+</body>
+</html>

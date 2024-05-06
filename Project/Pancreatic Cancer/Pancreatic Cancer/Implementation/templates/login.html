@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Page</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Satisfy&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Cinzel:wght@400..900&family=Satisfy&display=swap');
+  body{
+    background-image: url("/static/img3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #fecbfb;
+    height: 100vh;
+    color: #410057;
+    font-family: "Alegreya", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  }
+  
+  .container {
+    border-radius: 10px;
+    padding: 40px; 
+    max-width: 350px; 
+    margin-left: 100px;
+    margin-bottom: 200px;
+    background-color: #f4f4f437;
+    max-height: 950px;
+  }
+  
+ 
+  .login-form {
+    margin-top: 30px; 
+  }
+  
+  /* Style for form inputs and button */
+  input[type="text"],
+  input[type="password"],
+  button {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd; /* Soft border for inputs */
+    box-sizing: border-box;
+  }
+  button {
+    background-color: #914caf;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transition for the button hover effect */
+  }
+
+  h1 {
+    font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+    display: block;
+    font-size: 1.9em;
+    font-weight: bold;
+    margin-left: 220px;
+    color: aliceblue;
+    margin-top: 220px;
+    margin-top: 100px;
+    
+}
+label {
+    cursor: default;
+    font-size: large;
+}
+button {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd; /* Soft border for inputs */
+    box-sizing: border-box;
+  }
+  
+  button {
+    background-color: #914caf;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transition for the button hover effect */
+  }
+  
+  button:hover {
+    background-color: #6e268d;
+  }
+
+  /* Style for the "Register Here" link */
+  .register-link {
+    text-align: center;
+    margin-top: 10px;
+    
+  }
+
+  .register-link a {
+    color: #692ff2;
+    text-decoration: none;
+    
+  }
+
+  .register-link a:hover {
+    text-decoration: underline;
+    color: rgb(0, 157, 255);
+  }
+</style>
+</head>
+<body>
+  <h1> User logiN</h1>
+<!-- Container div -->
+  <div class="container">
+    <!-- Content goes here -->
+    
+    <form class="login-form" action="userlogin" method="post">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="email" placeholder="Enter your Email" required><br>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" placeholder="Enter your password" required><br><br>
+      <button type="submit">Login</button>
+    </form>
+    <!-- Register link -->
+    <div class="register-link">
+      <p>Don't have an account? <a href="userreg">Register Here</a></p>
+    </div>
+  </div>
+
+</body>
+</html>
